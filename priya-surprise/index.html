@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090914" />
+  <meta
+    name="description"
+    content="A little friendship surprise for Priya Verma Ji."
+  />
+  <title>For Verma Ji 🤍</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="glow glow-three"></div>
+    <div id="stars"></div>
+  </div>
+
+  <header class="progress-wrap" id="progressWrap" hidden>
+    <div class="progress-meta">
+      <span>A LITTLE SOMETHING FOR YOU</span>
+      <span id="stepCount">1 / 7</span>
+    </div>
+
+    <div class="progress-track">
+      <div id="progressBar"></div>
+    </div>
+  </header>
+
+  <main class="app">
+
+    <!-- SCREEN 0: WELCOME -->
+    <section class="screen active" data-screen="0">
+      <div class="flower-icon">🌷</div>
+
+      <p class="eyebrow">A TINY SURPRISE</p>
+
+      <h1>
+        Hi, Priya
+        <span class="gradient block">Verma Ji ✨</span>
+      </h1>
+
+      <p class="intro">
+        I made something just for you.<br />
+        No, it’s not a restaurant bill. 😂
+      </p>
+
+      <button class="primary" data-next>
+        Open surprise <span>♡</span>
+      </button>
+
+      <p class="micro">
+        Made with a little friendship & a lot of thought
+      </p>
+    </section>
+
+
+    <!-- SCREEN 1: FRIENDSHIP CARD -->
+    <section class="screen" data-screen="1">
+      <p class="eyebrow center">A LITTLE FRIENDSHIP CARD</p>
+
+      <article class="glass card">
+        <div class="card-top">
+          <span>OUR FRIENDSHIP</span>
+          <span>🤍</span>
+        </div>
+
+        <h2>PRIYA <b>×</b> ANIL</h2>
+
+        <p class="muted">
+          Two friends. Endless laughs.
+        </p>
+
+        <div class="rule"></div>
+
+        <blockquote>
+          “Some people become a part of your everyday life before you even
+          realise how much they matter.”
+        </blockquote>
+
+        <div class="facts">
+          <div>
+            <span>🌷</span>
+            <small>FRIENDSHIP SINCE</small>
+            <strong>March 2026</strong>
+          </div>
+
+          <div>
+            <span>🤝</span>
+            <small>OFFICIALLY</small>
+            <strong>Best Friends</strong>
+          </div>
+        </div>
+
+        <p class="micro center">
+          Priya Anil Restaurant soon? 👀
+        </p>
+      </article>
+
+      <button class="primary full" data-next>
+        Next <span>→</span>
+      </button>
+    </section>
+
+
+    <!-- SCREEN 2: FRIENDSHIP MEMORY -->
+    <section class="screen" data-screen="2">
+      <div class="big-emoji">🌙</div>
+
+      <p class="eyebrow center">A LITTLE THROWBACK</p>
+
+      <h2 class="center">
+        Hey, Verma Ji...<br />
+        <span class="pink">Yaad hai?</span>
+      </h2>
+
+      <article class="glass card">
+        <p>
+          March se shuru hui thi hamari dosti. Tab thodi pata tha ki itni
+          saari baatein, random jokes, problems aur restaurant ki planning
+          hone wali hai.
+        </p>
+
+        <div class="rule"></div>
+
+        <p>
+          Aur phir aaya hamara legendary business idea...
+        </p>
+
+        <div class="restaurant">
+          <small>COMING SOON</small>
+
+          <h3>Priya Anil Restaurant 🍽️</h3>
+
+          <p>
+            Menu: 50% food, 50% gossip.<br />
+            Special dish: unlimited Batee...
+          </p>
+        </div>
+      </article>
+
+      <button class="primary full" data-next>
+        Continue <span>→</span>
+      </button>
+    </section>
+
+
+    <!-- SCREEN 3: ENVELOPE -->
+    <section class="screen" data-screen="3">
+      <p class="eyebrow center">ONE THING FROM MY HEART</p>
+
+      <h2 class="center">
+        A little message<br />
+        <span class="pink">for you. 🤍</span>
+      </h2>
+
+      <button
+        class="envelope-wrap"
+        id="envelope"
+        aria-label="Open your letter"
+        aria-expanded="false"
+      >
+        <div class="envelope">
+          <div class="paper">
+            <span>💌</span>
+            <p>For Verma Ji</p>
+          </div>
+
+          <div class="back"></div>
+          <div class="flap"></div>
+          <div class="front"></div>
+
+          <div class="seal">♡</div>
+        </div>
+      </button>
+
+      <p class="muted center" id="envelopeHint">
+        Tap the envelope to open
+      </p>
+
+      <button class="primary full" id="readLetter" disabled>
+        Read my message <span>→</span>
+      </button>
+    </section>
+
+
+    <!-- SCREEN 4: APOLOGY LETTER -->
+    <section class="screen" data-screen="4">
+      <div class="big-emoji center">🤍</div>
+
+      <p class="eyebrow center">FROM ANIL, TO PRIYA</p>
+
+      <h2 class="center">
+        I’m sorry,<br />
+        <span class="pink">Verma Ji.</span>
+      </h2>
+
+      <article class="glass card letter">
+        <p>
+          Us din maine jo bola, meri wording galat thi. Aur main samajh
+          sakta hoon ki meri baat sunkar tumhe bura kyun laga.
+        </p>
+
+        <p>
+          Jab maine kaha ki mujhe baat karne ke liye koi chahiye, mera
+          matlab ye bilkul nahi tha ki tumhari jagah koi bhi le sakta hai.
+        </p>
+
+        <p>
+          Main bas apni baat sahi se explain nahi kar paya. Mujhe tumhe ye
+          feel nahi karwana chahiye tha ki tumhari apni koi value nahi hai.
+        </p>
+
+        <p>
+          <strong>
+            <span class="pink">Priya,</span> tum koi random person nahi ho
+            jisse main bas baat kar loon. Tum meri dost ho, aur hamari
+            dosti mere liye special hai.
+          </strong>
+        </p>
+
+        <p>
+          Sorry meri baat se tum hurt hui. Main apni galti ko justify
+          nahi karna chahta. Bas chahta hoon ki tum meri actual feelings
+          samjho.
+        </p>
+
+        <div class="quote">
+          “Tumhari jagah koi bhi nahi hai.<br />
+          Tumhari jagah tum ho.”
+        </div>
+      </article>
+
+      <button class="primary full" data-next>
+        Next <span>→</span>
+      </button>
+    </section>
+
+
+    <!-- SCREEN 5: YOUR VALUE -->
+    <section class="screen" data-screen="5">
+      <div class="big-emoji center">🫶</div>
+
+      <h2 class="center">Your value?</h2>
+
+      <p class="muted center">
+        It’s not about how many people I can talk to.<br />
+        It’s about the friendship we share.
+      </p>
+
+      <div class="memory-list">
+        <article class="glass memory">
+          <div class="memory-icon">🤝</div>
+
+          <div>
+            <small>01 / TRUST</small>
+
+            <p>
+              Tumse apni baatein share kar pana, aur tumhara apni baatein
+              share karna — ye mere liye matter karta hai.
+            </p>
+          </div>
+        </article>
+
+        <article class="glass memory">
+          <div class="memory-icon">🫶</div>
+
+          <div>
+            <small>02 / UNDERSTANDING</small>
+
+            <p>
+              Har baar agree karna zaroori nahi. Ek dusre ko samajhne ki
+              koshish karna zaroori hai.
+            </p>
+          </div>
+        </article>
+
+        <article class="glass memory">
+          <div class="memory-icon">🌷</div>
+
+          <div>
+            <small>03 / FRIENDSHIP</small>
+
+            <p>
+              Priya Anil Restaurant mazaak tha, par hamari dosti mere liye
+              mazaak nahi hai. 😂
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <button class="primary full" data-next>
+        One last surprise <span>♡</span>
+      </button>
+    </section>
+
+
+    <!-- SCREEN 6: GUSSA DEPARTMENT -->
+    <section class="screen" data-screen="6">
+      <div class="big-emoji center">⚠️</div>
+
+      <p class="eyebrow center">OFFICIAL FRIENDSHIP NOTICE</p>
+
+      <h2 class="center">
+        Verma Ji’s<br />
+        <span class="pink">Gussa Department</span>
+      </h2>
+
+      <article class="glass card">
+        <div class="meter-label">
+          <span>Gussa level</span>
+          <strong>90%</strong>
+        </div>
+
+        <div class="meter">
+          <span></span>
+        </div>
+
+        <p class="micro">
+          Current status: Madam is NOT impressed.
+        </p>
+
+        <div class="rule"></div>
+
+        <small class="eyebrow">RECOMMENDED TREATMENT</small>
+
+        <ul class="checklist">
+          <li>One genuine apology</li>
+          <li>One big smile</li>
+          <li>No unnecessary arguments</li>
+          <li>A friendship that matters</li>
+        </ul>
+
+        <div class="notice">
+          Note: Gussa kam karna aapki marzi hai.<br />
+          Sorry bolna meri responsibility. 🥹
+        </div>
+      </article>
+
+      <button class="primary full" data-next>
+        See the surprise <span>→</span>
+      </button>
+    </section>
+
+
+    <!-- SCREEN 7: FINAL SURPRISE -->
+    <section class="screen final-screen" data-screen="7">
+      <div id="confetti" aria-hidden="true"></div>
+
+      <div class="final-content">
+        <div class="flower-icon">🎉</div>
+
+        <p class="eyebrow center">SURPRISE, VERMA JI</p>
+
+        <h2 class="final-title">
+          You are<br />
+          <span class="gradient">YOU. 🤍</span>
+        </h2>
+
+        <article class="glass card final-card">
+          <p class="lead">
+            Tum koi bhi nahi ho, Priya.<br />
+            <strong class="pink">Tum Priya ho.</strong>
+          </p>
+
+          <p>
+            And I’m genuinely glad ki hamari dosti hui. Main nahi chahta
+            ki meri ek galat baat tumhe ye feel karaye ki tum matter nahi
+            karti.
+          </p>
+
+          <div class="heart-rule">
+            ────── ♡ ──────
+          </div>
+
+          <h3>Best Friends</h3>
+
+          <p class="muted">Priya & Anil</p>
+        </article>
+
+        <p class="smile">
+          Ab thoda sa smile kar do? 🥹
+        </p>
+
+        <button class="secret" id="secretButton">
+          Don’t click 👀
+        </button>
+
+        <div class="secret-message" id="secretMessage" hidden>
+          <strong>I knew you’d click it. 😂</strong>
+
+          <p>
+            Ab sach mein, Verma Ji...<br />
+            Smile kar do. Restaurant ki opening bhi karni hai. 🍽️
+          </p>
+        </div>
+
+        <button class="replay" id="replay">
+          Watch again ↺
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    MADE WITH FRIENDSHIP · NOT A RESTAURANT BILL
+  </footer>
+</body>
+</html>
